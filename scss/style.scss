@@ -59,7 +59,7 @@ html {
 
 /*header start*/
 header.site-header {
-    background-color: $clr-skin;
+    background-color: $clr-grey;
     font-size: 18px;
     padding: 8px 0;
     font-weight: 700;
@@ -75,7 +75,7 @@ header.site-header {
 }
 
 header.site-header.sticky {
-    background: rgb(194 123 127 / 58%);
+    background: #d140319e;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding: 10px 0;
@@ -144,7 +144,7 @@ header.site-header.sticky {
 
 
 .footer::before {
-    background: #c27b7fcc;
+    background: rgb(226 137 127 / 87%);
     width: 100%;
     height: 100%;
     content: "";
@@ -289,7 +289,7 @@ section.privacybanner {
 
 .privacy-policy {
     padding: 50px 0;
-    background-color: $clr-skin;
+    background-color: $clr-grey;
     position: relative;
 }
 
@@ -312,6 +312,63 @@ section.contactbanner {
         height: 450px;
     }
 }
+
+.about_us_content {
+    background-color: #fff;
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.input-control {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid $clr-peach;
+    padding: 2rem 2rem;
+    background: transparent;
+    color: #0C0B0B;
+}
+
+textarea.input-control {
+    resize: none;
+    height: auto;
+}
+
+.form-group .submit-btn {
+    color: $clr-white !important;
+    background-color: $clr-peach;
+    border: 1px solid $clr-peach;
+    transition: all 0.2s linear;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    text-transform: capitalize;
+}
+
+.form-group .submit-btn:hover {
+    background-color: transparent;
+    border: 1px solid $clr-peach;
+}
+
+.input-control:focus-visible {
+    outline: none;
+}
+
+.form-group label {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: $clr-peach;
+    transition: all 0.2s linear;
+    text-transform: capitalize;
+}
+
+button.submit-btn {
+    color: $clr-darkblue !important;
+    background-color: $clr-peach;
+}
+
 
 /*contactus-css-end*/
 
@@ -337,7 +394,7 @@ section.termsbanner {
 
 /*topgraph-css-start*/
 .topgraph {
-    background: $clr-skin;
+    background: $clr-grey;
     padding: 50px 0;
 
     &__text1 {
@@ -361,28 +418,32 @@ section.termsbanner {
         font-size: 18px;
         text-transform: capitalize;
         padding: 14px 31px;
-        color: $clr-darkblue;
+        color: $clr-white;
 
         &:hover {
             background-color: transparent;
+            color: $clr-peach;
         }
     }
 }
 
 .topslides {
-    background-color: $clr-skin;
+    background-color: $clr-grey;
 }
 
 .topgraph2 {
-    background-color: $clr-skin;
+    background-color: $clr-grey;
 }
 
 .booksslides1 {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: all 0.2s linear;
     margin: 0 1rem;
-    margin-bottom: 30px;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
 
     &-text {
@@ -419,13 +480,14 @@ section.termsbanner {
 /*banner-css-start*/
 section.homebanner {
     position: relative;
-    background-color: $clr-skin;
+    background-color: $clr-grey;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    margin-top: 94px;
+    padding: 150px 0 0 0;
     overflow: hidden;
+
 }
 
 .banner-text {
@@ -551,6 +613,131 @@ section.homebanner {
 }
 
 /*Cricket-css-end*/
+
+/*other-sports-css-start*/
+section.othersports-banner {
+    position: relative;
+    background-color: $clr-grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    padding: 150px 0 0 0;
+    overflow: hidden;
+}
+
+.main-img-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $clr-white;
+    border: 2px solid $clr-peach;
+    padding: 23px;
+    border-radius: 4px;
+
+    @media screen and (max-width:820px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+}
+
+.restaurant-img {
+    width: 100%;
+    max-width: 30%;
+
+    @media screen and (max-width:1024px) {
+        max-width: 25%;
+    }
+
+    @media screen and (max-width:820px) {
+        max-width: 100%;
+    }
+
+    img {
+        height: 200px;
+        object-fit: cover;
+
+        @media screen and (max-width:820px) {
+            max-width: 100%;
+            height: 350px;
+        }
+
+    }
+}
+
+.restaurent-text {
+    max-width: 58%;
+    margin-left: 51px;
+
+    a:hover {
+        color: $clr-peach;
+
+    }
+
+    @media screen and (max-width:820px) {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+}
+
+.restaurent-text p {
+    font-size: 17px;
+    color: $clr-darkblue;
+}
+
+.resturent-button {
+    width: 100%;
+    max-width: 12%;
+    margin-left: 20px;
+
+    @media screen and (max-width:1024px) {
+        max-width: 16%;
+    }
+
+    @media screen and (max-width:820px) {
+        margin-left: 0;
+    }
+}
+
+.resturent-button a {
+    display: block;
+    width: 137px;
+    background: $clr-peach;
+    text-align: center;
+    color: $clr-white;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid $clr-peach;
+
+    &:hover {
+        background-color: transparent;
+        color: $clr-darkblue;
+        border: 1px solid $clr-peach;
+    }
+}
+
+.row.restaurant {
+    padding-top: 15px;
+}
+
+section.casino__cards {
+    padding-bottom: 50px;
+}
+
+.middletext-banner {
+    text-align: center;
+
+    img {
+        max-width: 350px;
+    }
+}
+
+/*other-sports-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

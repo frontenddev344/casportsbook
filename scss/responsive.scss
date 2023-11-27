@@ -207,6 +207,10 @@
     .slidesbooks {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .about_us_content {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:767px) {
