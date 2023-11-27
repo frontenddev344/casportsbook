@@ -1,0 +1,35 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: 'Barlow', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: $clr-darkblue;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height:70px;
+    color: $clr-peach;
+    font-family: 'Della Respira', serif;
+
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 500;
+    font-family: 'Della Respira', serif;
+}

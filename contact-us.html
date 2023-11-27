@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <!-- site-header start -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-logo">
+        <a href="index.html"><img src="images/header-logo.png" alt="site-logo"></a>
+      </div>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cricket.html">Cricket</a></li>
+          <li><a href="rugby.html">Rugby</a></li>
+          <li><a href="football.html">Football</a></li>
+          <li><a href="other-sports.html">Other Sports</a></li>
+          <li><a href="non-sports.html">Non-Sport</a></li>
+          <li><a href="contact-us.html" class="menu active">Contact Us</a></li>
+          <li class="closed-menu">
+            <a href="#">×</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+    </div>
+  </header>
+  <!-- site header end -->
+
+  <!-- site contactbanner start -->
+  <section class="contactbanner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="banner-text">
+            <h1></h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- site contactbanner end -->
+
+  <!--Start-footer-section-->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="footer_box">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="index.html" class=" menu active">Home</a></li>
+              <li><a href="cricket.html">Cricket</a></li>
+              <li><a href="rugby.html">Rugby</a></li>
+              <li><a href="football.html">Football</a></li>
+              <li><a href="other-sports.html">Other Sports</a></li>
+              <li><a href="non-sports.html">Non-Sport</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="terms-conditions.html">Terms Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="footer_box footer_boxes">
+            <div class="footer_box">
+              <a href="index.html"><img src="images/header-logo.png" class="img-fluid" alt="logo"></a>
+            </div>
+            <div class="footer_icon">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="mail">
+            <h3>Contact Us</h3>
+            <h4>Email</h4>
+            <li><a href="mail to:">sports@casportsbooks.net</a></li>
+            <h4>Phone</h4>
+            <li><a href="telephone">XXXX0000000</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End-footer-section-->
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".menu-toggle").click(function () {
+        $("body").addClass("toggle");
+      });
+    });
+
+    $(document).ready(function () {
+      $(".closed-menu").click(function () {
+        $("body").removeClass("toggle");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var header = $("header");
+        header.toggleClass("sticky", $(window).scrollTop() > 0);
+      });
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
