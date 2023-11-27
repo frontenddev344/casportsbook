@@ -126,7 +126,40 @@ header.site-header.sticky {
     display: none !important;
 }
 
+/*cookie start*/
+.cookie-alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    left: 0;
+}
 
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+    background: $clr-peach;
+    padding: 6px 22px;
+    color: $clr-white;
+    font-size: 20px;
+    border: 1px solid $clr-peach;
+
+    &:hover {
+        background-color: transparent;
+        color: $clr-peach;
+    }
+}
+
+/*cookie end*/
 
 /*header end*/
 

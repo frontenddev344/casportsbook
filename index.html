@@ -308,10 +308,75 @@
   </section>
   <!--End-footer-section-->
 
+
+  <!--Start--Cookies-section-->
+  <div class="card cookie-alert show">
+    <div class="card-body p-5">
+      <h4>COOKIES</h4>
+      <p>This website uses cookies<br>
+        We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We
+        also share information about your use of our site with our social media, advertising and analytics partners who
+        may combine it with other information that you’ve provided to them or that they’ve collected from your use of
+        their services.
+      </p>
+      <div class="btn-toolbar justify-content-end">
+
+        <a href="#" class="btn btn-primary accept-cookies">Akzeptieren</a>
+      </div>
+    </div>
+  </div>
+  <!--End-Cookies-section-->
+
+
+
+
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/owl.carousel.js"></script>
 
+  <script>
+    (function () {
+      "use strict";
+
+      var cookieAlert = document.querySelector(".cookie-alert");
+      var acceptCookies = document.querySelector(".accept-cookies");
+
+      cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+      if (!getCookie("acceptCookies")) {
+        cookieAlert.classList.add("show");
+      }
+
+      acceptCookies.addEventListener("click", function () {
+        setCookie("acceptCookies", true, 60);
+        cookieAlert.classList.remove("show");
+      });
+    })();
+
+    // Cookie functions stolen from w3schools
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  </script>
 
   <script>
     $(document).ready(function () {

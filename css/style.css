@@ -155,6 +155,39 @@ header.site-header.sticky {
   display: none !important;
 }
 
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: 0;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #d14031;
+  padding: 6px 22px;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #d14031;
+}
+a.btn.btn-primary.accept-cookies:hover {
+  background-color: transparent;
+  color: #d14031;
+}
+
+/*cookie end*/
 /*header end*/
 /*--footer--*/
 .footer {
