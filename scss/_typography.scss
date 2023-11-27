@@ -21,9 +21,14 @@ p {
 h1 {
     font-size: 60px;
     font-weight: 500;
-    line-height:70px;
+    line-height: 70px;
     color: $clr-peach;
     font-family: 'Della Respira', serif;
+
+    @include mq(sm) {
+        font-size: 40px;
+        line-height: 50px;
+    }
 
 }
 

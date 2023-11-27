@@ -21,6 +21,12 @@ h1 {
   color: #c27b7f;
   font-family: "Della Respira", serif;
 }
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
 
 h2 {
   font-size: 60px;
@@ -52,6 +58,9 @@ h2 {
   }
   .site-nav li {
     font-size: 15px;
+  }
+  .slidesbooks.count {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 991px) {
@@ -186,6 +195,19 @@ h2 {
     line-height: 32px;
     font-weight: 600;
     opacity: 0.7;
+  }
+}
+@media screen and (max-width: 786px) {
+  .slidesbooks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer_box.footer_boxes {
+    margin: 30px 0;
+  }
+  .slidesbooks.count {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 575px) {
