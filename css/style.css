@@ -512,7 +512,7 @@ section.homebanner {
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  padding: 150px 0 0 0;
+  padding: 100px 0 0 0;
   overflow: hidden;
 }
 
@@ -757,6 +757,119 @@ section.casino__cards {
 }
 
 /*other-sports-css-end*/
+/*Football-css-start*/
+section.footballbanner {
+  position: relative;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+}
+
+.casino-information.part p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.linked__section {
+  padding: 50px 0;
+}
+
+.link__main {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 100%;
+  transition: all 0.3s;
+}
+.link__main:hover {
+  transform: translateY(-10px);
+}
+
+.link__card {
+  height: 100%;
+}
+
+.linked__picture img {
+  width: 100%;
+  border-radius: 40px;
+  transition: all 0.3s;
+}
+.linked__picture img:hover {
+  transform: translateY(-10px);
+}
+
+.link__content {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: justify;
+}
+.link__content h3 {
+  color: #d14031;
+  font-size: 20px;
+  font-family: "Della Respira";
+  font-weight: 500;
+}
+.link__content p {
+  line-height: 23px;
+  text-align: justify;
+}
+
+.link__contents {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: justify;
+}
+.link__contents h3 {
+  color: #d14031;
+  font-size: 20px;
+  font-family: "Della Respira";
+  font-weight: 500;
+}
+.link__contents p {
+  text-align: justify;
+}
+
+p.disclaimer__text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.casino-information.part p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+a.btn-home {
+  background: #d14031;
+  border: 2px solid #d14031;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 14px 31px;
+  color: #fff;
+}
+a.btn-home:hover {
+  background-color: transparent;
+  color: #d14031;
+}
+
+.link__btn {
+  padding: 24px 0;
+}
+
+.casino-information.disclaimer {
+  padding: 40px 0;
+}
+
+/*Football-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */
