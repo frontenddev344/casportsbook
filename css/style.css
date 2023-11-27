@@ -757,6 +757,26 @@ section.casino__cards {
 }
 
 /*other-sports-css-end*/
+/*other-sports-css-end*/
+/*nonsportsbanner-css-start*/
+section.nonsportsbanner {
+  position: relative;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+}
+
+h3.text-center.popular {
+  color: #d14031;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+/*nonsportsbanner-css-end*/
 /*Football-css-start*/
 section.footballbanner {
   position: relative;
@@ -793,8 +813,10 @@ section.footballbanner {
 
 .linked__picture img {
   width: 100%;
-  border-radius: 40px;
   transition: all 0.3s;
+  height: 350px;
+  object-fit: cover;
+  max-width: 500px;
 }
 .linked__picture img:hover {
   transform: translateY(-10px);
@@ -813,6 +835,7 @@ section.footballbanner {
   font-size: 20px;
   font-family: "Della Respira";
   font-weight: 500;
+  max-width: 70%;
 }
 .link__content p {
   line-height: 23px;
@@ -832,6 +855,7 @@ section.footballbanner {
   font-size: 20px;
   font-family: "Della Respira";
   font-weight: 500;
+  max-width: 70%;
 }
 .link__contents p {
   text-align: justify;
