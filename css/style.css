@@ -390,6 +390,7 @@ textarea.input-control {
 .form-group .submit-btn:hover {
   background-color: transparent;
   border: 1px solid #d14031;
+  color: #d14031 !important;
 }
 
 .input-control:focus-visible {
@@ -632,6 +633,19 @@ section.homebanner {
 }
 
 /*Cricket-css-end*/
+/*Rugby-css-end*/
+section.rugbybanner {
+  position: relative;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  padding: 150px 0 0 0;
+  overflow: hidden;
+}
+
+/*Rugby-css-end*/
 /*other-sports-css-start*/
 section.othersports-banner {
   position: relative;
@@ -756,7 +770,6 @@ section.casino__cards {
   max-width: 350px;
 }
 
-/*other-sports-css-end*/
 /*other-sports-css-end*/
 /*nonsportsbanner-css-start*/
 section.nonsportsbanner {
