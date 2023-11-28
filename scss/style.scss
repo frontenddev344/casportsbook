@@ -75,7 +75,7 @@ header.site-header {
 }
 
 header.site-header.sticky {
-    background: #d140319e;
+    background: $clr-white;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     padding: 10px 0;
