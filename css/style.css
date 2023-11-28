@@ -452,7 +452,7 @@ section.termsbanner::after {
   display: inline-block;
   font-size: 18px;
   text-transform: capitalize;
-  padding: 14px 31px;
+  padding: 9px 23px;
   color: #fff;
 }
 .top-btn a:hover {
@@ -486,6 +486,7 @@ section.termsbanner::after {
   height: 350px;
   width: 100%;
   transition: all 0.2s linear;
+  margin-top: -4px;
 }
 .booksslides1 h3 {
   text-align: center;
@@ -890,7 +891,7 @@ a.btn-home {
   display: inline-block;
   font-size: 18px;
   text-transform: capitalize;
-  padding: 14px 31px;
+  padding: 9px 23px;
   color: #fff;
 }
 a.btn-home:hover {

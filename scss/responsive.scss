@@ -219,6 +219,9 @@
     .about_us_content {
         width: 100%;
     }
+    .topgraph {
+        padding: 18px 0;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -243,6 +246,10 @@
 @media screen and (max-width:575px) {
     .site-nav {
         width: 100%;
+    }
+
+    .top-btn a {
+        padding: 9px 23px;
     }
 
     .content-wrap {

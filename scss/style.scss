@@ -451,7 +451,7 @@ section.termsbanner {
         display: inline-block;
         font-size: 18px;
         text-transform: capitalize;
-        padding: 14px 31px;
+        padding: 9px 23px;
         color: $clr-white;
 
         &:hover {
@@ -489,6 +489,7 @@ section.termsbanner {
         height: 350px;
         width: 100%;
         transition: all 0.2s linear;
+        margin-top: -4px;
     }
 
     h3 {
@@ -916,7 +917,7 @@ a.btn-home {
     display: inline-block;
     font-size: 18px;
     text-transform: capitalize;
-    padding: 14px 31px;
+    padding: 9px 23px;
     color: #fff;
 
     &:hover {
