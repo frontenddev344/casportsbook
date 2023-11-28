@@ -297,11 +297,15 @@ a.btn.btn-primary.accept-cookies:hover {
   padding: 0;
   margin: 0px 11px;
 }
+.footer_boxes ul li a:hover {
+  background-color: #fff;
+  color: #d14031;
+}
 
 /*footer-css-end*/
 /*privacy-css-end*/
 section.privacybanner {
-  background-image: url(../images/privacybanner.avif);
+  background-image: url(../images/privacybanner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -487,6 +491,9 @@ section.termsbanner::after {
   width: 100%;
   transition: all 0.2s linear;
   margin-top: -4px;
+}
+.booksslides1 img:hover {
+  filter: grayscale(1);
 }
 .booksslides1 h3 {
   text-align: center;

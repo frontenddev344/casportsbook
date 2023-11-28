@@ -281,13 +281,18 @@ a.btn.btn-primary.accept-cookies {
     justify-content: center;
     padding: 0;
     margin: 0px 11px;
+
+    &:hover {
+        background-color: $clr-white;
+        color: $clr-peach;
+    }
 }
 
 /*footer-css-end*/
 
 /*privacy-css-end*/
 section.privacybanner {
-    background-image: url(../images/privacybanner.avif);
+    background-image: url(../images/privacybanner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -490,6 +495,10 @@ section.termsbanner {
         width: 100%;
         transition: all 0.2s linear;
         margin-top: -4px;
+
+        &:hover {
+            filter: grayscale(1);
+        }
     }
 
     h3 {
