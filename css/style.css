@@ -304,22 +304,6 @@ a.btn.btn-primary.accept-cookies:hover {
 
 /*footer-css-end*/
 /*privacy-css-end*/
-section.privacybanner {
-  background-image: url(../images/privacybanner.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 450px;
-  position: relative;
-}
-section.privacybanner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  height: 450px;
-}
-
 .content-wrap h3 {
   font-size: 25px;
   color: #2f4858;
